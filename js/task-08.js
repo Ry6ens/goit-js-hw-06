@@ -4,7 +4,6 @@ form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
-  //let users = [];
   let user = {};
 
   const {
@@ -17,10 +16,6 @@ function handleSubmit(event) {
 
   user.email = email.value;
   user.password = password.value;
-  //users.push(user);
-
-  //console.log(users);
-  console.log(user);
 
   event.currentTarget.reset();
 }
